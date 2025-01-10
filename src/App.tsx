@@ -8,7 +8,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<VerseCard verseText={"VerseTex"} bookName={"Book"} chapter={"Chapter"} verse={"Verse"}/>} />
+        <Route path="/" element={<VerseCard />} />
+        <Route path="/hbd" element={<HomePage />} />
         <Route path="/time" element={<TimePage />} />
       </Routes>
     </Router>

@@ -2,10 +2,13 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url('/bg1.avif'); /* The public folder is the base for URLs */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position:left ; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
