@@ -32,12 +32,12 @@ const TimePage: React.FC = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
+    <div style={{ padding: "20px" }}>
       <h1>{time}</h1>
       <blockquote style={{ fontSize: "1.5rem", marginTop: "20px" }}>
         {currentQuote.verse}
       </blockquote>
-      <p style={{ fontStyle: "italic", marginTop: "10px" }}>
+      <p style={{ textAlign: "right", fontStyle: "italic", marginRight:"20px", marginTop: "10px" }}>
         - {currentQuote.reference}
       </p>
     </div>

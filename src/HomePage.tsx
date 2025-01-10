@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
         >
           Happy Birthday
           <br />
-          Name!
+          Koky!
         </motion.h1>
       </div>
     </>
