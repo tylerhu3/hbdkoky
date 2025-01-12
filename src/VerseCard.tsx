@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Book, Chapter, loadBibleData, Verse } from './BibleDB';
+import React, { useState, useEffect } from 'react'
+import { Book, loadBibleData } from './BibleDB';
 interface VerseCardProps { }
 
 const VerseCard: React.FC<VerseCardProps> = () => {
@@ -31,33 +31,33 @@ const VerseCard: React.FC<VerseCardProps> = () => {
     "Koky, you are loved, you are valued, and you are amazing just the way you are. Keep being your authentic self—it’s more than enough!"
   ];
 
-  const pepTalks: string[] = [
-    "Remember, every expert was once a beginner. Your dedication to learning and growing sets you apart. Take pride in your progress, no matter how small it may seem.",
+//   const pepTalks: string[] = [
+//     "Remember, every expert was once a beginner. Your dedication to learning and growing sets you apart. Take pride in your progress, no matter how small it may seem.",
     
-    "You've overcome challenges before, and you'll overcome this one too. Your resilience is your superpower. Trust in your ability to figure things out.",
+//     "You've overcome challenges before, and you'll overcome this one too. Your resilience is your superpower. Trust in your ability to figure things out.",
     
-    "Don't compare your chapter 1 to someone else's chapter 20. Focus on your own journey and celebrate your unique path. You're exactly where you need to be.",
+//     "Don't compare your chapter 1 to someone else's chapter 20. Focus on your own journey and celebrate your unique path. You're exactly where you need to be.",
     
-    "Setbacks aren't failures; they're opportunities to learn and come back stronger. Every obstacle you face is making you more resourceful and determined.",
+//     "Setbacks aren't failures; they're opportunities to learn and come back stronger. Every obstacle you face is making you more resourceful and determined.",
     
-    "Your potential is limitless. When you feel stuck, remember that breakthrough moments often come right after the biggest challenges. Keep pushing forward.",
+//     "Your potential is limitless. When you feel stuck, remember that breakthrough moments often come right after the biggest challenges. Keep pushing forward.",
     
-    "Success isn't about being perfect; it's about being persistent. Each step forward, no matter how small, brings you closer to your goals. You've got this!",
+//     "Success isn't about being perfect; it's about being persistent. Each step forward, no matter how small, brings you closer to your goals. You've got this!",
     
-    "Think of how far you've come instead of how far you have to go. You've already proven you have what it takes. Now it's just about keeping that momentum.",
+//     "Think of how far you've come instead of how far you have to go. You've already proven you have what it takes. Now it's just about keeping that momentum.",
     
-    "Your worth isn't measured by your productivity or achievements. You are valuable simply because you are you. Let that truth empower you today.",
+//     "Your worth isn't measured by your productivity or achievements. You are valuable simply because you are you. Let that truth empower you today.",
     
-    "Every expert started exactly where you are now. Your curiosity and willingness to learn are your greatest assets. Trust the process and keep going.",
+//     "Every expert started exactly where you are now. Your curiosity and willingness to learn are your greatest assets. Trust the process and keep going.",
     
-    "Don't wait until you feel ready - you'll grow into your capabilities as you challenge yourself. Take that first step, even if it feels uncertain.",
+//     "Don't wait until you feel ready - you'll grow into your capabilities as you challenge yourself. Take that first step, even if it feels uncertain.",
     
-    "Your past experiences have equipped you with unique insights and strengths. Use them as fuel for your journey forward. You're more prepared than you realize.",
+//     "Your past experiences have equipped you with unique insights and strengths. Use them as fuel for your journey forward. You're more prepared than you realize.",
     
-    "Remember why you started. That spark of passion and purpose is still within you. Let it guide you through the challenging moments.",
+//     "Remember why you started. That spark of passion and purpose is still within you. Let it guide you through the challenging moments.",
     
-    "You don't have to see the whole staircase to take the first step. Trust in your ability to figure things out as you go. Your future self will thank you for starting today."
-];
+//     "You don't have to see the whole staircase to take the first step. Trust in your ability to figure things out as you go. Your future self will thank you for starting today."
+// ];
 
 
   useEffect(() => {
