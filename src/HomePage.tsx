@@ -7,10 +7,10 @@ const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
   // Uncomment this useEffect to navigate to the "time" page after 5 seconds
-  // useEffect(() => {
-  //   const timer = setTimeout(() => navigate("/time"), 5000);
-  //   return () => clearTimeout(timer);
-  // }, [navigate]);
+  useEffect(() => {
+    const timer = setTimeout(() => navigate("/clock"), 5000);
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
     <>

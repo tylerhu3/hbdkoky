@@ -16,7 +16,7 @@ const VerseCard: React.FC<VerseCardProps> = () => {
   });
 
   const pepTalksForKoky: string[] = [
-    "",
+    "Remember why you started. That spark of passion and purpose is still within you. Let it guide you through the challenging moments.",
     "Koky, you are stronger than any challenge that comes your way. Keep shining and pushing forward—you’ve got this!",
     "Every step you take, no matter how small, brings you closer to your goals, Koky. Believe in your power to achieve greatness.",
     "Koky, your kindness and resilience inspire everyone around you. Never underestimate your ability to make a difference.",
@@ -94,10 +94,10 @@ const VerseCard: React.FC<VerseCardProps> = () => {
   }, []);
 
   async function noVerseFoundAction(hour: string, min: string) {
-    setBookName("Pep Talks(Not Bible)");
+    setBookName("Tyler Hu(Not Bible)");
     setChapter(hour);
     setVerse(min);
-    setVerseText(pepTalks[Number(hour)]);
+    setVerseText(pepTalksForKoky[Number(hour)]);
   }
 
   // Update verse based on time
@@ -110,8 +110,8 @@ const VerseCard: React.FC<VerseCardProps> = () => {
         var currentHour = (now.getHours() == 24 || now.getHours() == 0 || now.getHours() == 12) ? 12 : now.getHours() % 12;
         var currentMinute = now.getMinutes();
 
-        // currentHour = 12
-        // currentMinute = 59
+        // currentHour = 1
+        // currentMinute = 0
 
         const timeString = `Hour: ${currentHour} Minute:${currentMinute}`;
         console.log("Loading Verse 2 ", timeString)
@@ -186,15 +186,6 @@ const VerseCard: React.FC<VerseCardProps> = () => {
   return (
     <div
       style={{
-        // color:"black",
-        // width: "100vh",
-        // // backgroundColor: 'pink',
-        // minHeight: '100vh',
-        // display: 'flex',
-        // flexDirection: 'column',
-        // alignItems: 'center',
-        // padding: '10px', // Add padding for smaller screens
-
         display: "flex",
         justifyContent: "center", // Centers horizontally
         alignItems: "center", // Centers vertically
@@ -208,11 +199,11 @@ const VerseCard: React.FC<VerseCardProps> = () => {
       <h1
         style={{
           position: "absolute", // Allows positioning at the top center
-          top: "10px", // 10px from the top
+          top: "0%", // 10px from the top
           left: "50%", // Start from the horizontal center of the container
           transform: "translateX(-50%)", // Adjust back by 50% of its own width
-          paddingTop: "5%",
-          fontSize: "2.5  rem",
+          paddingTop: (deviceInfo.isMobile == true  && deviceInfo.orientation == 'landscape') ? "0%" : "5%"  ,
+          fontSize: "1.5  rem",
           fontWeight: "bold",
           color: "black",
           fontFamily: '"Playwrite VN", serif',
@@ -222,10 +213,8 @@ const VerseCard: React.FC<VerseCardProps> = () => {
           overflow: 'none',   // Optional: Hide overflow if the text is too long
         }}
       >
-        Bible Clock
+        Koky Clock
       </h1>
-
-
 
       {/* Card */}
       <div
